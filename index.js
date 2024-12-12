@@ -8,3 +8,18 @@ function getComputerChoice() {
         return 'scissors';
     }
 }
+
+function getHumanChoice() {
+    let humanChoice;
+    humanChoice = prompt('Enter rock, paper, or scissors: ');
+    while (
+        humanChoice !== 'rock' &&
+        humanChoice !== 'paper' &&
+        humanChoice !== 'scissors'
+    ) {
+        humanChoice = prompt(
+            'You entered an invalid choice. Enter rock, paper, or scissors: '
+        );
+    }
+    return humanChoice;
+}
