@@ -46,19 +46,3 @@ function playRound(humanChoice, computerChoice) {
         );
     }
 }
-
-function playGame() {
-    let humanChoice;
-    let computerChoice;
-    for (let i = 0; i < 5; i++) {
-        playRound(
-            (humanChoice = getHumanChoice()),
-            (computerChoice = getComputerChoice())
-        );
-    }
-    if (humanScore > computerScore) {
-        console.log('Congrats! You won the game! :)');
-    } else {
-        console.log('L + ratio, loser. :(');
-    }
-}
